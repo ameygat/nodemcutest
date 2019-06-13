@@ -1,14 +1,16 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 11" },
-    { "id": 2, "title": "Post 22" },
-    { "id": 3, "title": "Post 33" }
+  "getotp": [
+    { "lock_id": 11, "status": 0,"lock_status": "DEAD"},
+    { "lock_id": 12, "status": 1,"lock_status": "READY"},
+    { "lock_id": 13, "status": 2,"lock_status": "LOCK", "msg":"Go to lock state of remain in Lock state"},
+    { "lock_id": 14, "status": 3,"lock_status": "LOCK", "otp":4423,"expires_at":"13-06-2019 13:21"},
+    { "lock_id": 15, "status": 9001,"msg":"Could not process!"}
   ],
-  "comments": [
-    { "id": 1, "body": "some comment1", "postId": 1 },
-    { "id": 2, "body": "some comment2", "postId": 1 }
+  "unlocked": [
+    { "lock_id": 14, "status": 4,"lock_status": "UNLOCK", "timeout_dead":300,"msg":"state will be dead in 5 minutes"},
+    { "lock_id": 15, "status": 9002,"msg":"Could not process!"}
   ],
-  "profile": {
-    "name": "amey"
+  "failed": {
+    { "lock_id": 15, "status": 9003,"lock_status": "LOCK","msg":"Reset OTP max attempts reached"},
   }
 }
