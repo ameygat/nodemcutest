@@ -9,9 +9,5 @@
   "unlocked": [
     { "lock_id": 14, "status": 4,"lock_status": "UNLOCK", "timeout_dead":300,"msg":"state will be dead in 5 minutes"},
     { "lock_id": 15, "status": 9002,"msg":"Could not process!"}
-  ],
-  "failed": [
-    { "lock_id": 16, "status": 9003,"lock_status": "LOCK","msg":"Reset OTP max attempts reached"},
-    { "lock_id": 15, "status": 9004,"msg":"Could not process!"}
   ]
 }
